@@ -1,0 +1,898 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Barlow", sans-serif;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 94.47px;
+    width: 100%;
+    .atalho-footer {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        .item1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item3 {
+            position: relative;
+            width: 75px;
+            height: 75px;
+            bottom: 10px;
+            border-radius: 50%;
+            background: linear-gradient(
+                45deg,
+                rgba(17, 2, 186, 0.92) 0%,
+                #00c9ff 100%
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item4 {
+            .badge {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.colorido {
+    height: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .cor-1 {
+        background-color: #290f57;
+    }
+    .cor-2 {
+        background-color: #d64b34;
+    }
+    .cor-3 {
+        background-color: #ca1f72;
+    }
+}
+
+// LOGIN
+.square {
+    width: 100%;
+    height: 333px;
+    background: linear-gradient(
+        314.65deg,
+        rgba(17, 2, 186, 0.92) -0.61%,
+        #6540c3 100%
+    );
+    .logo {
+        width: 214px;
+        height: 123px;
+        margin-left: 55px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.login {
+    width: 90%;
+    height: 427px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    bottom: 0%;
+    margin: 0 5%;
+
+    .mail {
+        display: flex;
+        align-items: center;
+    }
+    label {
+        font-family: Barlow;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #a68787;
+    }
+    input {
+        border-radius: 20px;
+        background: #fff9f9;
+        border: 0;
+        outline: none;
+        margin-left: 12px;
+        color: #a68787;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+    }
+    input::placeholder {
+        color: #a68787;
+    }
+    a {
+        color: #1102ba;
+        text-decoration: none;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0em;
+    }
+    .btn-entrar {
+        button {
+            width: 100%;
+            height: 48px;
+            background-color: #280684;
+            border-radius: 15px;
+            color: #fff;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    }
+    .google {
+        width: 48%;
+        button {
+            width: 100%;
+            // width: 137px;
+            height: 34px;
+            background: #f6314a;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .facebook {
+        width: 48%;
+        button {
+            width: 100%;
+            // width: 137px;
+            height: 34px;
+            background: #1102ba;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .line {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+// PRIMEIRA PAGINA
+
+.square-1 {
+    height: 264px;
+    background: linear-gradient(
+        314.65deg,
+        rgba(17, 2, 186, 0.92) -0.61%,
+        #6540c3 100%
+    );
+    .usuario {
+        padding-top: 21px;
+        margin: 0 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .saudacao {
+            display: flex;
+            align-items: center;
+            p {
+                color: #fff;
+                padding-left: 10px;
+                margin-top: 10px;
+                font-family: Barlow;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 33px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+        .avatar {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            border: 2px #fff solid;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+    .extrato {
+        margin-top: 45px;
+        button {
+            width: 210px;
+            height: 43px;
+            background-color: #280684;
+            border-radius: 4px;
+            color: #fff;
+            font-family: Barlow;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    }
+    .atalhos {
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100px;
+        grid-column-gap: 10px;
+        .atalho-item {
+            background-color: #fff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+            p {
+                position: absolute;
+                top: 110px;
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #1102ba;
+            }
+        }
+    }
+}
+.estabelecimentos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .titulo {
+        p {
+            color: #1102ba;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+        }
+    }
+    .loja {
+        display: flex;
+        .logo {
+            width: 60%;
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: #1102ba;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 19px;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+            p {
+                margin-left: 10px;
+            }
+        }
+        .sd {
+            width: 40%;
+            .cashback {
+                color: #1102ba;
+                font-size: 22px;
+                font-weight: 900;
+                line-height: 24px;
+                text-align: center;
+            }
+            .carteira {
+                display: flex;
+                align-items: center;
+                .saldo {
+                    text-align: center;
+                    p {
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 10px;
+                        color: #1102ba;
+                        text-align: center;
+                    }
+                }
+                .valor {
+                    p {
+                        padding-left: 08px;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #1102ba;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Pagina de movimentação
+.square-2 {
+    width: 100%;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        314.65deg,
+        rgba(17, 2, 186, 0.92) -0.61%,
+        #6540c3 100%
+    );
+    h1 {
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 33px;
+        letter-spacing: 0em;
+        color: #ccc;
+    }
+}
+.btn-voltar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    a {
+        border: 1px solid #280684;
+        background-color: #280684;
+        color: #ccc;
+        width: 210px;
+        height: 43px;
+        border-radius: 4px;
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 26px;
+        letter-spacing: 0em;
+    }
+    a:hover {
+        border: 1px solid #280684;
+        background-color: #ccc;
+        color: #280684;
+    }
+}
+
+.btn-detalhe {
+    position: relative;
+    bottom: 20px;
+    left: 110px;
+    width: 100%;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #280684;
+        color: #ccc;
+        height: 25px;
+        font-size: 11px;
+        font-weight: 900;
+        line-height: 15px;
+        letter-spacing: 0em;
+    }
+}
+.espacamento {
+    margin-bottom: 100px;
+}
+
+.estabelecimentos-1 {
+    margin-top: 40px;
+    margin-bottom: 120px;
+    .titulo {
+        p {
+            color: #1102ba;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+        }
+    }
+    .loja {
+        display: flex;
+        height: 100%;
+        .logo {
+            width: 60%;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #1102ba;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 19px;
+                height: 100%;
+
+            }
+            p{
+                padding-left: 5px;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+            .btn-vertudo {
+                display: flex;
+                justify-content: end;
+                position: relative;
+                bottom: 15px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    background: #280684;
+                    color: #ccc;
+                    height: 25px;
+                    width: 58%;
+                    font-size: 0.7rem;
+                    font-weight: 900;
+                    line-height: 15px;
+                }
+            }
+        }
+        .sd {
+            width: 40%;
+            .cashback {
+                padding-left: 10px;
+                .ganhou-1 {
+                    color: #1102ba;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                }
+                .gastou-1 {
+                    color: #d64b34;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                }
+                .ganhou {
+                    color: #1102ba;
+                    margin: 0;
+                    font-size: 10px;
+                    font-weight: 700;
+                    line-height: 10px;
+                    letter-spacing: 0em;
+                }
+                .gastou {
+                    margin: 0;
+                    color: #d64b34;
+                    font-size: 10px;
+                    font-weight: 700;
+                    line-height: 10px;
+                    letter-spacing: 0em;
+                }
+                .data {
+                    color: #1102ba;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                }
+            }
+            .carteira {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .saldo {
+                    p {
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 10px;
+                        letter-spacing: 0em;
+                        color: #1102ba;
+                    }
+                }
+                .valor {
+                    p {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        color: #1102ba;
+                    }
+                }
+            }
+        }
+    }
+}
+// Pagina de movimentação single
+.square-3 {
+    margin-bottom: 80px;
+    height: 237px;
+    background: linear-gradient(
+        314.65deg,
+        rgba(17, 2, 186, 0.92) -0.61%,
+        #6540c3 100%
+    );
+
+    .atalhos {
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100px;
+        grid-column-gap: 10px;
+        .atalho-item {
+            background-color: #fff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+            p {
+                position: absolute;
+                top: 110px;
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #1102ba;
+            }
+        }
+    }
+    .titulo {
+        h1 {
+            padding-top: 10px;
+            color: #ccc;
+            font-family: Barlow;
+            font-size: 31px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 33px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .seu-cash {
+        display: flex;
+        .cash {
+            width: 300px;
+            p {
+                color: #ccc;
+                font-family: Barlow;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+            }
+            span {
+                margin-top: 10px;
+                font-family: Barlow;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 42px;
+                letter-spacing: 0em;
+                color: #ccc;
+            }
+        }
+    }
+    .btn-atras {
+        width: 150px;
+        a {
+            img {
+                width: 52px;
+                height: 52px;
+            }
+        }
+    }
+}
+
+// Detalhes de produtos
+
+.detalhes-produtos {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+
+    .voltar {
+        a {
+            width: 100%;
+            background-color: #280684;
+            border: #280684 1px solid;
+            border-radius: 4px;
+            color: #ccc;
+            font-family: Barlow;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 22px;
+            letter-spacing: 0em;
+        }
+    }
+    .data-detalhe {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        h6 {
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 10px;
+            color: #1102ba;
+        }
+        h4 {
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1102ba;
+        }
+    }
+}
+
+.produto {
+    margin-top: 40px;
+    height: 90px;
+    display: flex;
+    .logo {
+        width: 25%;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .nome {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        h3 {
+            margin-left: 15px;
+            color: #1102ba;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 19px;
+        }
+    }
+    .precos {
+        width: 35%;
+        height: 100%;
+        margin-left: 15px;
+        h6 {
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 10px;
+            margin: 0;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 24px;
+        }
+        .gastou {
+            color: #d64b34;
+        }
+        .ganhou {
+            color: #1102ba;
+        }
+    }
+}
+
+// index5
+
+.top {
+    width: 100%;
+    height: 172px;
+    background: linear-gradient(
+        314.65deg,
+        rgba(17, 2, 186, 0.92) -0.61%,
+        #6540c3 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .titulo {
+        position: relative;
+        color: #ccc;
+        h3 {
+            font-size: 31px;
+            font-weight: 900;
+            line-height: 33px;
+        }
+        h4 {
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+        }
+        .carteira {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                padding: 5px;
+            }
+        }
+    }
+    .voltar {
+        position: absolute;
+        left: 15px;
+    }
+}
+.realizar {
+    h1 {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 21px;
+        color: #1102ba;
+    }
+}
+.id {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 16px;
+    color: #1102ba;
+}
+.search-id {
+    input {
+        width: 80%;
+        left: 10px;
+        max-width: 274px;
+        height: 48px;
+        border-radius: 4px;
+        background-color: #ff5f6d;
+        border: 1px solid #ff5f6d;
+        outline: none;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #ccc;
+        position: relative;
+    }
+    button {
+        border: none;
+        position: relative;
+        right: 40px;
+        bottom: 06px;
+        background-color: transparent;
+    }
+}
+.local {
+    .logo-loja {
+        margin: 0 auto;
+        width: 90px;
+        height: 90px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .nome-loja {
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 19px;
+            color: #1102ba;
+        }
+    }
+}
+.pagamento {
+    width: 220px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    color: #1102ba;
+    h5 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    h3 {
+        padding-left: 30px;
+        font-size: 52px;
+        font-weight: 900;
+        line-height: 56px;
+    }
+}
+
+.borda {
+    border: 2px #000 solid;
+    width: 185px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 50px;
+}
+
+.cashback-total {
+    p {
+        color: #280684;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 21px;
+    }
+    .cash {
+        width: 180px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        .porcento {
+            p {
+                color: #1102ba;
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 32px;
+            }
+        }
+        .reais {
+            p {
+                color: #f6314a;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+}
+.btn-pagar {
+    button {
+        width: 100%;
+        height: 50px;
+        background-color: #280684;
+        border: #280684 1px solid;
+        border-radius: 0px;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 21px;
+    }
+}
