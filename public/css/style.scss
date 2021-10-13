@@ -13,6 +13,8 @@ body {
     height: 94.47px;
     width: 100%;
     .atalho-footer {
+        background-color: #ccc;
+        border-radius: 20px;
         height: 100%;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
